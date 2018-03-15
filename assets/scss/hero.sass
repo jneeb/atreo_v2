@@ -3,7 +3,7 @@
     background: linear-gradient(50deg, rgba(14, 11, 22, 0.5), rgba(14, 11, 22, 0.5)), url(/img/about-img-1.jpg)
     background-size: cover
     background-repeat: no-repeat
-    background-position: center
+    background-position: top
     box-sizing: border-box
     justify-content: center
     display: flex
@@ -31,3 +31,44 @@
         border: none
         color: white
         cursor: pointer
+
+@media (min-width: 768px)
+    #hero
+        height: 80vh
+        background-position: center
+
+        span
+            font-size: 20px
+
+        h1
+            font-size: 28px
+            margin: 20px
+
+        button
+//
+// @media (min-width: 1024px)
+//     .mobileNav
+//         display: block
+//
+//     .tabletNav
+//         display: none
+//
+//     .desktopNav
+//         display: block
+//
+// @media (min-width: 992px)
+//     .mobileNav
+//         display: block
+//
+@media (min-width: 1200px)
+    #hero
+        height: 80vh
+        background-position: center
+
+        span
+            font-size: 22px
+
+        h1
+            font-size: 34px
+
+        button

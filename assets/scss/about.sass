@@ -3,7 +3,7 @@
     padding: 50px 0
 
     .aboutCol
-        padding: 0 15px
+        padding: 0 30px
 
         h2
             font-family: 'Roboto', sans-serif
@@ -26,6 +26,7 @@
             font-family: 'Open Sans', sans-serif
             text-align: center
             margin-bottom: 30px
+            line-height: 2
 
         .imgRow
             display: flex
@@ -36,3 +37,81 @@
             img
                 width: 100%
                 margin-bottom: 10px
+
+@media (min-width: 768px)
+    #about
+        display: flex
+
+        .aboutCol
+            width: 50%
+
+            h2
+                text-align: left
+
+            h3
+                text-align: left
+
+            h4
+                text-align: left
+
+            p
+                text-align: left
+
+            .imgRow
+                display: flex
+                flex-direction: row
+                justify-content: flex-end
+
+                img
+                    height: 150px
+                    width: 150px
+                    margin: 5px
+                    object-fit: cover
+
+@media (min-width: 1024px)
+    #about
+
+        .aboutCol:nth-child(1)
+            margin-left: 100px
+
+        .aboutCol:nth-child(2)
+            margin-right: 100px
+
+        .aboutCol
+
+            h2
+                font-size: 40px
+
+            h3
+                font-size: 32px
+
+            h4
+                font-size: 24px
+
+@media (min-width: 1200px)
+    #about
+
+        .aboutCol
+
+            h2
+                font-size: 72px
+
+            h3
+                font-size: 48px
+
+            h4
+                font-size: 36px
+
+            p
+
+            .imgRow
+
+                img
+                    height: 300px
+                    width: 300px
+
+        .aboutCol:nth-child(1)
+            margin-left: 15%
+
+        .aboutCol:nth-child(2)
+            margin-right: 15%

@@ -30,6 +30,17 @@ footer
                 padding: 0 15px
                 font-size: 30px
 
+                i
+
+                    &:hover.fa-facebook-square
+                        color: #3b5998
+
+                    &:hover.fa-instagram
+                        color: #df3967
+
+                    &:hover.fa-twitter
+                        color: #00aced
+
         .mailingList
             display: flex
             justify-content: center
@@ -50,3 +61,46 @@ footer
 
             span:nth-child(3)
                 background: $blue
+
+    p
+        color: white
+        text-align: center
+        font-family: 'Roboto', sans-serif
+        font-size: 12px
+        padding: 30px 50px 0 50px
+
+        a
+            color: white
+            text-decoration: underline
+            cursor: pointer
+
+@media (min-width: 768px)
+    footer
+
+        .footerRowWrap
+            display: flex
+            justify-content: center
+            flex-direction: row-reverse
+            margin-top: 20px
+
+            .socialFooter
+                margin: 0 30px
+                width: 200px
+
+            .mailingList
+                margin: 0 30px
+                width: 200px
+
+                span
+                    margin: 10px 0
+
+@media (min-width: 1200px)
+    footer
+
+        .footerRowWrap
+
+            .socialFooter
+                width: 300px
+
+            .mailingList
+                width: 300px

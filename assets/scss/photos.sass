@@ -1,5 +1,5 @@
 #photos
-    padding: 50px 15px
+    padding: 50px 30px
     background: $stark
 
     h3
@@ -11,3 +11,39 @@
 
         img
             width: 100%
+
+@media (min-width: 768px)
+    #photos
+
+        .imgRow
+            display: flex
+            flex-direction: row
+            justify-content: center
+            align-items: center
+
+            img
+                width: 100px
+
+@media (min-width: 1024px)
+    #photos
+
+        .imgRow
+
+            img
+                width: 150px
+
+@media (min-width: 1200px)
+    #photos
+
+        .imgRow
+
+            img
+                width: 200px
+
+@media (min-width: 1550px)
+    #photos
+
+        .imgRow
+
+            img
+                width: 300px
