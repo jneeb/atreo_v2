@@ -1,0 +1,96 @@
+html
+    margin: 0
+
+body
+    margin: 0
+    box-sizing: border-box
+
+.mobileNav
+    width: 100%
+    height: 50px
+    position: absolute
+    z-index: 7
+
+    span
+        display: block
+        position: absolute
+        width: 100%
+        height: 50px
+        background: black
+        z-index: 2
+
+    .logo
+
+        h2
+            margin: 0
+            color: white
+            padding: 11.5px 20px
+            position: absolute
+            z-index: 2
+
+    #mobileBurger
+        position: absolute
+        right: 0
+        display: flex
+        align-items: center
+        justify-content: center
+        height: 50px
+        width: 50px
+        padding: 0px 15px
+        cursor: pointer
+        z-index: 2
+
+        span,
+        span:before,
+        span:after
+            content: ""
+            display: block
+            background-color: white
+            height: 3px
+            width: 30px
+            position: relative
+            transition: all 0.3s ease-in-out
+
+        span:before
+            top: 10px
+
+        span:after
+            top: -13px
+
+        &.isOpen span
+            background: transparent
+
+        &.isOpen span:before,
+        &.isOpen span:after
+            transform-origin: center
+            transform: rotate(45deg)
+            top: 0
+
+        &.isOpen span:after
+            transform: rotate(-45deg)
+            top: -3px
+
+    #mobileSlider
+        width: 100%
+        margin-top: 50px
+        transform: translateY(-150%)
+        transition: all 0.7s ease-in-out
+        background: white
+
+        ul
+            margin: 0
+            padding: 0
+
+            li
+                list-style: none
+                text-align: center
+                padding: 7.5px 0
+                border-bottom: 1px solid black
+
+                a
+                    text-decoration: none
+                    color: black
+                    width: 100%
+
+#mobileSlider.isOpen
+    transform: translate(0)

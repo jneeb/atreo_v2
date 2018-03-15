@@ -1,0 +1,107 @@
+html {
+  margin: 0; }
+
+body {
+  margin: 0;
+  box-sizing: border-box; }
+
+.mobileNav {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  z-index: 7; }
+  .mobileNav span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background: black;
+    z-index: 2; }
+  .mobileNav .logo h2 {
+    margin: 0;
+    color: white;
+    padding: 11.5px 20px;
+    position: absolute;
+    z-index: 2; }
+  .mobileNav #mobileBurger {
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    padding: 0px 15px;
+    cursor: pointer;
+    z-index: 2; }
+    .mobileNav #mobileBurger span,
+    .mobileNav #mobileBurger span:before,
+    .mobileNav #mobileBurger span:after {
+      content: "";
+      display: block;
+      background-color: white;
+      height: 3px;
+      width: 30px;
+      position: relative;
+      transition: all 0.3s ease-in-out; }
+    .mobileNav #mobileBurger span:before {
+      top: 10px; }
+    .mobileNav #mobileBurger span:after {
+      top: -13px; }
+    .mobileNav #mobileBurger.isOpen span {
+      background: transparent; }
+    .mobileNav #mobileBurger.isOpen span:before,
+    .mobileNav #mobileBurger.isOpen span:after {
+      -webkit-transform-origin: center;
+              transform-origin: center;
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+      top: 0; }
+    .mobileNav #mobileBurger.isOpen span:after {
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+      top: -3px; }
+  .mobileNav #mobileSlider {
+    width: 100%;
+    margin-top: 50px;
+    -webkit-transform: translateY(-150%);
+            transform: translateY(-150%);
+    transition: all 0.7s ease-in-out;
+    background: white; }
+    .mobileNav #mobileSlider ul {
+      margin: 0;
+      padding: 0; }
+      .mobileNav #mobileSlider ul li {
+        list-style: none;
+        text-align: center;
+        padding: 7.5px 0;
+        border-bottom: 1px solid black; }
+        .mobileNav #mobileSlider ul li a {
+          text-decoration: none;
+          color: black;
+          width: 100%; }
+
+#mobileSlider.isOpen {
+  -webkit-transform: translate(0);
+          transform: translate(0); }
+
+#hero {
+  padding: 50px 10px;
+  box-sizing: border-box;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 60vh; }
+  #hero span {
+    text-align: center; }
+  #hero h1 {
+    text-align: center; }
+  #hero button {
+    display: block;
+    box-sizing: border-box;
+    padding: 10px 35px;
+    background: #4717F6;
+    border: none;
+    color: white;
+    cursor: pointer; }
