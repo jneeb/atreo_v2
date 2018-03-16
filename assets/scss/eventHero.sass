@@ -1,31 +1,35 @@
-#eventHero
-    padding: 50px 30px
+.eventPageWrap
 
-    .eventHeroWrapper
-        padding-top: 50px
-        display: flex
-        justify-content: center
-        align-items: center
+    .eventPageCol
 
-        img
-            width: 300px
+        #eventHero
+            padding: 50px 30px
 
-#eventInfo
-    padding: 0 30px
+            .eventHeroWrapper
+                padding-top: 50px
+                display: flex
+                justify-content: center
+                align-items: center
 
-    h1
-        font-family: 'Roboto', sans-serif
-        text-align: center
+                img
+                    width: 300px
 
-    h2
-        font-family: 'Roboto', sans-serif
-        text-align: center
+        #eventInfo
+            padding: 0 30px
 
-    p
-        font-family: 'Open Sans', sans-serif
+            h1
+                font-family: 'Roboto', sans-serif
+                text-align: center
 
-#eventContact
-    padding: 0 30px
+            h2
+                font-family: 'Roboto', sans-serif
+                text-align: center
+
+            p
+                font-family: 'Open Sans', sans-serif
+
+        #eventContact
+            padding: 0 30px
 
 #eventLocation
     padding: 0 30px
@@ -34,6 +38,36 @@
         font-family: 'Roboto', sans-serif
         text-align: center
 
-#map
-    height: 300px
-    width: 100%
+    #map
+        height: 300px
+        width: 100%
+
+@media (min-width: 1024px)
+    .eventPageWrap
+        padding-top: 150px
+        display: flex
+        justify-content: flex-start
+
+        .eventPageCol
+            width: 50%
+
+            #eventHero
+                padding: 0
+
+                .eventHeroWrapper
+                    padding-top: 0
+
+            #eventInfo
+
+                h1
+                    text-align: left
+
+                h2
+                    text-align: left
+
+                p
+
+    #eventLocation
+
+        h3
+            text-align: left

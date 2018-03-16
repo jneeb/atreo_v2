@@ -34,9 +34,30 @@
             flex-direction: column
             align-items: center
 
-            img
-                width: 100%
-                margin-bottom: 10px
+            span
+
+                svg
+                    display: none
+                    position: absolute
+                    height: 50px
+                    filter: invert(100%)
+                    cursor: pointer
+                    z-index: 7
+
+                img
+                    width: 100%
+                    margin-bottom: 10px
+                    cursor: pointer
+
+                .filter
+                    display: none
+                    background: rgba(28, 9, 96, 0.5)
+                    box-sizing: border-box
+                    height: 150px
+                    width: 150px
+                    position: absolute
+                    cursor: pointer
+
 
 @media (min-width: 768px)
     #about
@@ -62,11 +83,34 @@
                 flex-direction: row
                 justify-content: flex-end
 
-                img
-                    height: 150px
-                    width: 150px
-                    margin: 5px
-                    object-fit: cover
+                span
+                    position: relative
+                    display: flex
+                    justify-content: center
+                    align-items: center
+
+                    svg
+                        display: none
+                        position: absolute
+                        height: 50px
+                        filter: invert(100%)
+                        cursor: pointer
+                        z-index: 7
+
+                    img
+                        height: 150px
+                        width: 150px
+                        margin: 5px
+                        object-fit: cover
+
+
+                span:hover
+
+                    svg
+                        display: block
+
+                    .filter
+                        display: block
 
 @media (min-width: 1024px)
     #about
@@ -106,9 +150,15 @@
 
             .imgRow
 
-                img
-                    height: 300px
-                    width: 300px
+                span
+
+                    .filter
+                        height: 300px
+                        width: 300px
+
+                    img
+                        height: 300px
+                        width: 300px
 
         .aboutCol:nth-child(1)
             margin-left: 15%

@@ -1,0 +1,104 @@
+#eventContact
+
+    .eventContactTitleDesktop
+        display: none
+
+    .eventContactTitleMobile
+
+        span
+            display: block
+            background: black
+            color: white
+            padding: 10px 15px 0 15px
+
+    .guestListForm, .bottleServiceForm
+
+        form
+            background: black
+            box-sizing: border-box
+            padding: 15px
+            padding-bottom: 50px
+
+            input
+                width: 100%
+                box-sizing: border-box
+                color: white
+                background: grey
+                padding: 5px
+                margin: 10px 0
+                font-family: 'Roboto', sans-serif
+
+                &::placeholder
+                    color: white
+
+            select
+                width: 100%
+                box-sizing: border-box
+                color: white
+                background: grey
+                padding: 5px
+                margin: 10px 0
+                font-family: 'Roboto', sans-serif
+
+                &::placeholder
+                    color: white
+
+                option
+                    width: 100%
+                    color: white
+
+            textarea
+                width: 100%
+                box-sizing: border-box
+                resize: none
+                padding: 5px
+                background: grey
+                color: white
+                font-family: 'Roboto', sans-serif
+                margin: 10px 0
+
+                &::placeholder
+                    color: white
+
+            button
+                font-family: 'Roboto', sans-serif
+                font-weight: 700
+                padding: 10px 25px
+                background: grey
+                border: none
+                color: white
+                float: right
+                margin: 5px 0
+                cursor: pointer
+
+@media (min-width: 1024px)
+    #eventContact
+
+        .eventContactTitleDesktop
+            display: flex
+
+            span
+                display: block
+                color: red
+                box-sizing: border-box
+                padding: 10px 25px
+                border: 1px solid grey
+                cursor: pointer
+
+            span.active
+                background: black
+
+        .guestListForm, .bottleServiceForm
+            display: none
+
+            .eventContactTitleMobile
+                display: none
+
+        .bottleServiceForm
+            display: none
+
+        .guestListForm.active
+            display: block
+
+        .bottleServiceForm.active
+            display: block

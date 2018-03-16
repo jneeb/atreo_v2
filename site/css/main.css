@@ -205,9 +205,26 @@ h1, h2, h3, h4, p {
       justify-content: center;
       flex-direction: column;
       align-items: center; }
-      #about .aboutCol .imgRow img {
+      #about .aboutCol .imgRow span svg {
+        display: none;
+        position: absolute;
+        height: 50px;
+        -webkit-filter: invert(100%);
+                filter: invert(100%);
+        cursor: pointer;
+        z-index: 7; }
+      #about .aboutCol .imgRow span img {
         width: 100%;
-        margin-bottom: 10px; }
+        margin-bottom: 10px;
+        cursor: pointer; }
+      #about .aboutCol .imgRow span .filter {
+        display: none;
+        background: rgba(28, 9, 96, 0.5);
+        box-sizing: border-box;
+        height: 150px;
+        width: 150px;
+        position: absolute;
+        cursor: pointer; }
 
 @media (min-width: 768px) {
   #about {
@@ -226,12 +243,29 @@ h1, h2, h3, h4, p {
         display: flex;
         flex-direction: row;
         justify-content: flex-end; }
-        #about .aboutCol .imgRow img {
-          height: 150px;
-          width: 150px;
-          margin: 5px;
-          -o-object-fit: cover;
-             object-fit: cover; } }
+        #about .aboutCol .imgRow span {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          #about .aboutCol .imgRow span svg {
+            display: none;
+            position: absolute;
+            height: 50px;
+            -webkit-filter: invert(100%);
+                    filter: invert(100%);
+            cursor: pointer;
+            z-index: 7; }
+          #about .aboutCol .imgRow span img {
+            height: 150px;
+            width: 150px;
+            margin: 5px;
+            -o-object-fit: cover;
+               object-fit: cover; }
+        #about .aboutCol .imgRow span:hover svg {
+          display: block; }
+        #about .aboutCol .imgRow span:hover .filter {
+          display: block; } }
 
 @media (min-width: 1024px) {
   #about .aboutCol:nth-child(1) {
@@ -252,7 +286,10 @@ h1, h2, h3, h4, p {
     font-size: 48px; }
   #about .aboutCol h4 {
     font-size: 36px; }
-  #about .aboutCol .imgRow img {
+  #about .aboutCol .imgRow span .filter {
+    height: 300px;
+    width: 300px; }
+  #about .aboutCol .imgRow span img {
     height: 300px;
     width: 300px; }
   #about .aboutCol:nth-child(1) {
@@ -302,7 +339,8 @@ h1, h2, h3, h4, p {
     color: white;
     padding: 15px 25px;
     font-family: 'Roboto', sans-serif;
-    font-weight: 700; }
+    font-weight: 700;
+    cursor: pointer; }
 
 @media (min-width: 1200px) {
   #events h2 {
@@ -323,7 +361,8 @@ h1, h2, h3, h4, p {
     text-align: center;
     margin-bottom: 30px; }
   #photos .imgRow img {
-    width: 100%; }
+    width: 100%;
+    cursor: pointer; }
 
 @media (min-width: 768px) {
   #photos .imgRow {
@@ -351,7 +390,8 @@ h1, h2, h3, h4, p {
   padding: 30px 100px; }
   #sponsors img {
     width: 100%;
-    margin: 20px 0; }
+    margin: 20px 0;
+    cursor: pointer; }
 
 @media (min-width: 768px) {
   #sponsors {
@@ -448,28 +488,28 @@ footer {
   footer .footerRowWrap .mailingList {
     width: 300px; } }
 
-#eventHero {
+.eventPageWrap .eventPageCol #eventHero {
   padding: 50px 30px; }
-  #eventHero .eventHeroWrapper {
+  .eventPageWrap .eventPageCol #eventHero .eventHeroWrapper {
     padding-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center; }
-    #eventHero .eventHeroWrapper img {
+    .eventPageWrap .eventPageCol #eventHero .eventHeroWrapper img {
       width: 300px; }
 
-#eventInfo {
+.eventPageWrap .eventPageCol #eventInfo {
   padding: 0 30px; }
-  #eventInfo h1 {
+  .eventPageWrap .eventPageCol #eventInfo h1 {
     font-family: 'Roboto', sans-serif;
     text-align: center; }
-  #eventInfo h2 {
+  .eventPageWrap .eventPageCol #eventInfo h2 {
     font-family: 'Roboto', sans-serif;
     text-align: center; }
-  #eventInfo p {
+  .eventPageWrap .eventPageCol #eventInfo p {
     font-family: 'Open Sans', sans-serif; }
 
-#eventContact {
+.eventPageWrap .eventPageCol #eventContact {
   padding: 0 30px; }
 
 #eventLocation {
@@ -477,7 +517,124 @@ footer {
   #eventLocation h3 {
     font-family: 'Roboto', sans-serif;
     text-align: center; }
+  #eventLocation #map {
+    height: 300px;
+    width: 100%; }
 
-#map {
-  height: 300px;
-  width: 100%; }
+@media (min-width: 1024px) {
+  .eventPageWrap {
+    padding-top: 150px;
+    display: flex;
+    justify-content: flex-start; }
+    .eventPageWrap .eventPageCol {
+      width: 50%; }
+      .eventPageWrap .eventPageCol #eventHero {
+        padding: 0; }
+        .eventPageWrap .eventPageCol #eventHero .eventHeroWrapper {
+          padding-top: 0; }
+      .eventPageWrap .eventPageCol #eventInfo h1 {
+        text-align: left; }
+      .eventPageWrap .eventPageCol #eventInfo h2 {
+        text-align: left; }
+  #eventLocation h3 {
+    text-align: left; } }
+
+#eventContact .eventContactTitleDesktop {
+  display: none; }
+
+#eventContact .eventContactTitleMobile span {
+  display: block;
+  background: black;
+  color: white;
+  padding: 10px 15px 0 15px; }
+
+#eventContact .guestListForm form, #eventContact .bottleServiceForm form {
+  background: black;
+  box-sizing: border-box;
+  padding: 15px;
+  padding-bottom: 50px; }
+  #eventContact .guestListForm form input, #eventContact .bottleServiceForm form input {
+    width: 100%;
+    box-sizing: border-box;
+    color: white;
+    background: grey;
+    padding: 5px;
+    margin: 10px 0;
+    font-family: 'Roboto', sans-serif; }
+    #eventContact .guestListForm form input::-webkit-input-placeholder, #eventContact .bottleServiceForm form input::-webkit-input-placeholder {
+      color: white; }
+    #eventContact .guestListForm form input:-ms-input-placeholder, #eventContact .bottleServiceForm form input:-ms-input-placeholder {
+      color: white; }
+    #eventContact .guestListForm form input::-ms-input-placeholder, #eventContact .bottleServiceForm form input::-ms-input-placeholder {
+      color: white; }
+    #eventContact .guestListForm form input::placeholder, #eventContact .bottleServiceForm form input::placeholder {
+      color: white; }
+  #eventContact .guestListForm form select, #eventContact .bottleServiceForm form select {
+    width: 100%;
+    box-sizing: border-box;
+    color: white;
+    background: grey;
+    padding: 5px;
+    margin: 10px 0;
+    font-family: 'Roboto', sans-serif; }
+    #eventContact .guestListForm form select::-webkit-input-placeholder, #eventContact .bottleServiceForm form select::-webkit-input-placeholder {
+      color: white; }
+    #eventContact .guestListForm form select:-ms-input-placeholder, #eventContact .bottleServiceForm form select:-ms-input-placeholder {
+      color: white; }
+    #eventContact .guestListForm form select::-ms-input-placeholder, #eventContact .bottleServiceForm form select::-ms-input-placeholder {
+      color: white; }
+    #eventContact .guestListForm form select::placeholder, #eventContact .bottleServiceForm form select::placeholder {
+      color: white; }
+    #eventContact .guestListForm form select option, #eventContact .bottleServiceForm form select option {
+      width: 100%;
+      color: white; }
+  #eventContact .guestListForm form textarea, #eventContact .bottleServiceForm form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    resize: none;
+    padding: 5px;
+    background: grey;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px 0; }
+    #eventContact .guestListForm form textarea::-webkit-input-placeholder, #eventContact .bottleServiceForm form textarea::-webkit-input-placeholder {
+      color: white; }
+    #eventContact .guestListForm form textarea:-ms-input-placeholder, #eventContact .bottleServiceForm form textarea:-ms-input-placeholder {
+      color: white; }
+    #eventContact .guestListForm form textarea::-ms-input-placeholder, #eventContact .bottleServiceForm form textarea::-ms-input-placeholder {
+      color: white; }
+    #eventContact .guestListForm form textarea::placeholder, #eventContact .bottleServiceForm form textarea::placeholder {
+      color: white; }
+  #eventContact .guestListForm form button, #eventContact .bottleServiceForm form button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    padding: 10px 25px;
+    background: grey;
+    border: none;
+    color: white;
+    float: right;
+    margin: 5px 0;
+    cursor: pointer; }
+
+@media (min-width: 1024px) {
+  #eventContact .eventContactTitleDesktop {
+    display: flex; }
+    #eventContact .eventContactTitleDesktop span {
+      display: block;
+      color: red;
+      box-sizing: border-box;
+      padding: 10px 25px;
+      border: 1px solid grey;
+      cursor: pointer; }
+    #eventContact .eventContactTitleDesktop span.active {
+      background: black; }
+  #eventContact .guestListForm, #eventContact .bottleServiceForm {
+    display: none; }
+    #eventContact .guestListForm .eventContactTitleMobile, #eventContact .bottleServiceForm .eventContactTitleMobile {
+      display: none; }
+  #eventContact .bottleServiceForm {
+    display: none; }
+  #eventContact .guestListForm.active {
+    display: block; }
+  #eventContact .bottleServiceForm.active {
+    display: block; } }
