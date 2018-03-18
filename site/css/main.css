@@ -623,7 +623,7 @@ footer {
     margin: 5px 0;
     cursor: pointer; }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   #eventContact .eventContactTitleDesktop {
     display: flex; }
     #eventContact .eventContactTitleDesktop span {
@@ -646,17 +646,17 @@ footer {
   #eventContact .bottleServiceForm.active {
     display: block; } }
 
-#photosPageHero {
+#pageHero {
   padding: 50px 0;
-  height: 60vh;
+  height: 40vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background: #E7DFDD; }
-  #photosPageHero h1 {
+  #pageHero h1 {
     text-align: center;
     margin-top: 20px; }
-  #photosPageHero h3 {
+  #pageHero h3 {
     text-align: center; }
 
 #pageAbout .pageAboutCol {
@@ -670,6 +670,27 @@ footer {
   #pageAbout .pageAboutCol p {
     text-align: center; }
 
+@media (min-width: 768px) {
+  #pageAbout {
+    display: flex;
+    justify-content: center; }
+    #pageAbout .pageAboutCol {
+      width: 300px;
+      padding: 0; }
+      #pageAbout .pageAboutCol h2 {
+        text-align: left;
+        font-size: 50px; }
+      #pageAbout .pageAboutCol h3 {
+        text-align: left; }
+      #pageAbout .pageAboutCol h4 {
+        text-align: left; }
+      #pageAbout .pageAboutCol p {
+        text-align: left; } }
+
+@media (min-width: 1024px) {
+  #pageAbout .pageAboutCol {
+    width: 450px; } }
+
 #photoGrid {
   padding: 50px 25px 0 25px;
   padding-bottom: 100px; }
@@ -680,6 +701,7 @@ footer {
     position: relative;
     overflow: hidden; }
     #photoGrid .albumGridWrap .albumImg img {
+      transition: all 0.3s ease-in-out;
       width: 100%;
       height: 100%;
       -o-object-fit: cover;
@@ -724,8 +746,7 @@ footer {
       height: 300px;
       width: 300px;
       position: absolute;
-      cursor: pointer;
-      z-index: 100; }
+      cursor: pointer; }
     #photoGrid .albumGridWrap .albumImg:hover img {
       z-index: 1; }
     #photoGrid .albumGridWrap .albumImg:hover svg {
@@ -742,9 +763,53 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; }
-    #photoGrid .albumGridWrap .albumImg img {
-      width: 300px; } }
+    #photoGrid .albumGridWrap .albumImg {
+      width: 300px;
+      height: 300px;
+      padding: 1px;
+      box-sizing: border-box; } }
 
 @media (min-width: 1024px) {
-  #photoGrid .albumGridWrap .albumImg img {
-    width: 400px; } }
+  #photoGrid {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; }
+    #photoGrid .albumGridWrap {
+      justify-content: flex-start;
+      max-width: 900px; } }
+
+#pageContact .contactFormWrap {
+  display: flex;
+  justify-content: center;
+  padding: 0 20px; }
+  #pageContact .contactFormWrap form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px; }
+    #pageContact .contactFormWrap form input {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 5px;
+      margin: 5px; }
+    #pageContact .contactFormWrap form textarea {
+      width: 100%;
+      box-sizing: border-box;
+      resize: none;
+      padding: 5px;
+      margin: 5px; }
+
+@media (min-width: 768px) {
+  #pageContact .contactFormWrap form {
+    width: 450px; } }
+
+@media (min-width: 1024px) {
+  #pageContact .contactFormWrap form {
+    width: 600px; } }
+
+@media (min-width: 1024px) {
+  #pageContact .contactFormWrap form {
+    width: 750px; } }
