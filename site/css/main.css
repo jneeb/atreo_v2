@@ -495,36 +495,47 @@ footer {
   footer .footerRowWrap .mailingList {
     width: 300px; } }
 
-.eventPageWrap .eventPageCol #eventHero {
-  padding: 50px 30px; }
-  .eventPageWrap .eventPageCol #eventHero .eventHeroWrapper {
-    padding-top: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    .eventPageWrap .eventPageCol #eventHero .eventHeroWrapper img {
-      width: 300px; }
-
-.eventPageWrap .eventPageCol #eventInfo {
-  padding: 0 30px; }
-  .eventPageWrap .eventPageCol #eventInfo h1 {
-    font-family: 'Roboto', sans-serif;
-    text-align: center; }
-  .eventPageWrap .eventPageCol #eventInfo h2 {
-    font-family: 'Roboto', sans-serif;
-    text-align: center; }
-  .eventPageWrap .eventPageCol #eventInfo p {
-    font-family: 'Open Sans', sans-serif; }
-
-.eventPageWrap .eventPageCol #eventContact {
-  padding: 0 30px; }
+.eventPageWrap {
+  background: #0E0B16; }
+  .eventPageWrap .eventPageCol #eventHero {
+    padding: 50px 30px; }
+    .eventPageWrap .eventPageCol #eventHero .eventHeroWrapper {
+      padding-top: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .eventPageWrap .eventPageCol #eventHero .eventHeroWrapper img {
+        width: 300px; }
+  .eventPageWrap .eventPageCol #eventInfo {
+    padding: 0 30px; }
+    .eventPageWrap .eventPageCol #eventInfo h1 {
+      font-family: 'Roboto', sans-serif;
+      text-align: center;
+      color: white; }
+    .eventPageWrap .eventPageCol #eventInfo h2 {
+      font-family: 'Roboto', sans-serif;
+      text-align: center;
+      color: white; }
+    .eventPageWrap .eventPageCol #eventInfo p {
+      font-family: 'Open Sans', sans-serif;
+      color: white; }
+  .eventPageWrap .eventPageCol #eventContact {
+    padding: 0 30px; }
 
 #eventLocation {
-  padding: 0 30px; }
+  padding: 0 30px;
+  background: #0E0B16;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px; }
   #eventLocation h3 {
     font-family: 'Roboto', sans-serif;
-    text-align: center; }
+    text-align: center;
+    color: white;
+    margin: 10px; }
   #eventLocation #map {
+    max-width: 800px;
     height: 300px;
     width: 100%; }
 
@@ -652,23 +663,40 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: #E7DFDD; }
+  background: linear-gradient(50deg, rgba(14, 11, 22, 0.5), rgba(14, 11, 22, 0.5)), url(/img/about-img-3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
   #pageHero h1 {
     text-align: center;
-    margin-top: 20px; }
+    margin-top: 20px;
+    color: white;
+    font-family: 'Roboto', sans-serif; }
   #pageHero h3 {
-    text-align: center; }
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif; }
 
-#pageAbout .pageAboutCol {
-  padding: 0 25px; }
-  #pageAbout .pageAboutCol h2 {
-    text-align: center; }
-  #pageAbout .pageAboutCol h3 {
-    text-align: center; }
-  #pageAbout .pageAboutCol h4 {
-    text-align: center; }
-  #pageAbout .pageAboutCol p {
-    text-align: center; }
+#pageAbout {
+  background: #0E0B16;
+  padding: 50px 0; }
+  #pageAbout .pageAboutCol {
+    padding: 0 25px; }
+    #pageAbout .pageAboutCol h2 {
+      text-align: center;
+      color: white;
+      font-family: 'Roboto', sans-serif; }
+    #pageAbout .pageAboutCol h3 {
+      text-align: center;
+      color: white;
+      font-family: 'Roboto', sans-serif; }
+    #pageAbout .pageAboutCol h4 {
+      text-align: center;
+      color: white;
+      font-family: 'Roboto', sans-serif; }
+    #pageAbout .pageAboutCol p {
+      text-align: center;
+      color: white;
+      font-family: 'Open Sans', sans-serif; }
 
 @media (min-width: 768px) {
   #pageAbout {
@@ -693,10 +721,13 @@ footer {
 
 #photoGrid {
   padding: 50px 25px 0 25px;
-  padding-bottom: 100px; }
+  padding-bottom: 100px;
+  background: #0E0B16; }
   #photoGrid h4 {
     text-align: center;
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    color: white;
+    font-family: 'Roboto', sans-serif; }
   #photoGrid .albumGridWrap .albumImg {
     position: relative;
     overflow: hidden; }
@@ -720,7 +751,7 @@ footer {
       -webkit-transform: translateX(-50%);
               transform: translateX(-50%); }
     #photoGrid .albumGridWrap .albumImg .albumImgMeta {
-      background: black;
+      background: rgba(0, 0, 0, 0.8);
       position: absolute;
       bottom: 0;
       width: 100%;
@@ -757,6 +788,15 @@ footer {
               transform: translateY(0); }
     #photoGrid .albumGridWrap .albumImg:hover .filter {
       display: block; }
+  #photoGrid .videoGridWrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+    #photoGrid .videoGridWrap iframe {
+      width: 275px;
+      margin: 10px 0;
+      height: auto; }
 
 @media (min-width: 768px) {
   #photoGrid .albumGridWrap {
@@ -767,7 +807,11 @@ footer {
       width: 300px;
       height: 300px;
       padding: 1px;
-      box-sizing: border-box; } }
+      box-sizing: border-box; }
+  #photoGrid .videoGridWrap iframe {
+    width: 560px;
+    height: 315px;
+    margin: 5px; } }
 
 @media (min-width: 1024px) {
   #photoGrid {
@@ -777,30 +821,38 @@ footer {
     align-items: center; }
     #photoGrid .albumGridWrap {
       justify-content: flex-start;
-      max-width: 900px; } }
+      max-width: 900px; }
+    #photoGrid .videoGridWrap {
+      max-width: 1200px; } }
 
-#pageContact .contactFormWrap {
-  display: flex;
-  justify-content: center;
-  padding: 0 20px; }
-  #pageContact .contactFormWrap form {
-    width: 100%;
+#pageContact {
+  background: #0E0B16; }
+  #pageContact h2 {
+    font-family: 'Roboto', sans-serif; }
+  #pageContact p {
+    font-family: 'Open Sans', sans-serif; }
+  #pageContact .contactFormWrap {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin: 5px; }
-    #pageContact .contactFormWrap form input {
+    padding: 0 20px; }
+    #pageContact .contactFormWrap form {
       width: 100%;
-      box-sizing: border-box;
-      padding: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       margin: 5px; }
-    #pageContact .contactFormWrap form textarea {
-      width: 100%;
-      box-sizing: border-box;
-      resize: none;
-      padding: 5px;
-      margin: 5px; }
+      #pageContact .contactFormWrap form input {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 5px;
+        margin: 5px; }
+      #pageContact .contactFormWrap form textarea {
+        width: 100%;
+        box-sizing: border-box;
+        resize: none;
+        padding: 5px;
+        margin: 5px; }
 
 @media (min-width: 768px) {
   #pageContact .contactFormWrap form {
@@ -813,3 +865,41 @@ footer {
 @media (min-width: 1024px) {
   #pageContact .contactFormWrap form {
     width: 750px; } }
+
+#albumTitle {
+  padding-top: 150px;
+  background: #0E0B16; }
+  #albumTitle h1 {
+    color: white;
+    text-align: center;
+    padding: 30px; }
+
+#photoAlbum {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #0E0B16;
+  padding: 0 25px; }
+  #photoAlbum .albumWrap {
+    width: 100%;
+    background: #0E0B16; }
+    #photoAlbum .albumWrap .slider-for img {
+      width: 100%; }
+    #photoAlbum .albumWrap .slider-nav img {
+      margin-top: 20px;
+      max-width: 100%;
+      padding: 0 2.5px;
+      box-sizing: border-box; }
+
+@media (min-width: 768px) {
+  #photoAlbum {
+    padding: 0 150px; } }
+
+@media (min-width: 1024px) {
+  #photoAlbum {
+    padding: 0 200px; } }
+
+@media (min-width: 1200px) {
+  #photoAlbum {
+    padding: 0 25%; } }

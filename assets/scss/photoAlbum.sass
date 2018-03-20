@@ -1,0 +1,46 @@
+#albumTitle
+    padding-top: 150px
+    background: $dark
+
+    h1
+        // background: #616161
+        color: white
+        text-align: center
+        padding: 30px
+
+#photoAlbum
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    background: $dark
+    padding: 0 25px
+
+    .albumWrap
+        width: 100%
+        background: $dark
+
+        .slider-for
+
+            img
+                width: 100%
+
+        .slider-nav
+
+            img
+                margin-top: 20px
+                max-width: 100%
+                padding: 0 2.5px
+                box-sizing: border-box
+
+@media (min-width: 768px)
+    #photoAlbum
+        padding: 0 150px
+
+@media (min-width: 1024px)
+    #photoAlbum
+        padding: 0 200px
+
+@media (min-width: 1200px)
+    #photoAlbum
+        padding: 0 25%
