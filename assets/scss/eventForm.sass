@@ -1,4 +1,5 @@
 #eventContact
+    margin-top: 30px
 
     .eventContactTitleDesktop
         display: none
@@ -7,14 +8,14 @@
 
         span
             display: block
-            background: black
+            background: #212121
             color: white
             padding: 10px 15px 0 15px
 
     .guestListForm, .bottleServiceForm
 
         form
-            background: black
+            background: #212121
             box-sizing: border-box
             padding: 15px
             padding-bottom: 50px
@@ -23,7 +24,8 @@
                 width: 100%
                 box-sizing: border-box
                 color: white
-                background: grey
+                background: #3c3c3c
+                border: 2px solid #616161
                 padding: 5px
                 margin: 10px 0
                 font-family: 'Roboto', sans-serif
@@ -34,8 +36,9 @@
             select
                 width: 100%
                 box-sizing: border-box
+                border: 2px solid #616161
                 color: white
-                background: grey
+                background: #3c3c3c
                 padding: 5px
                 margin: 10px 0
                 font-family: 'Roboto', sans-serif
@@ -50,9 +53,10 @@
             textarea
                 width: 100%
                 box-sizing: border-box
+                border: 2px solid #616161
                 resize: none
                 padding: 5px
-                background: grey
+                background: #3c3c3c
                 color: white
                 font-family: 'Roboto', sans-serif
                 margin: 10px 0
@@ -64,12 +68,16 @@
                 font-family: 'Roboto', sans-serif
                 font-weight: 700
                 padding: 10px 25px
-                background: grey
-                border: none
+                background: #3c3c3c
                 color: white
                 float: right
                 margin: 5px 0
                 cursor: pointer
+                border: 2px solid #616161
+
+                &:hover
+                    background: $stark
+                    color: black
 
 @media (min-width: 768px)
     #eventContact
@@ -79,14 +87,17 @@
 
             span
                 display: block
-                color: red
+                color: white
                 box-sizing: border-box
                 padding: 10px 25px
-                border: 1px solid grey
+                border: 2px solid #212121
                 cursor: pointer
+                font-family: 'Roboto', sans-serif
+                font-weight: 700
 
             span.active
-                background: black
+                background: #212121
+                border: none
 
         .guestListForm, .bottleServiceForm
             display: none

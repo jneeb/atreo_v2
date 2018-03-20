@@ -125,7 +125,9 @@ h1, h2, h3, h4, p {
           box-sizing: border-box;
           border-top: 5px solid transparent; }
           .desktopNav ul li a:hover {
-            border-top: 5px solid white; } }
+            border-top: 5px solid white; }
+          .desktopNav ul li a img {
+            height: 80px; } }
 
 #hero {
   padding: 50px 10px;
@@ -416,7 +418,7 @@ h1, h2, h3, h4, p {
     margin: 20px; } }
 
 footer {
-  padding: 50px 0;
+  padding: 50px 0 80px 0;
   background: linear-gradient(#0e0b16, rgba(14, 11, 22, 0)), url(/img/about-img-1.jpg);
   background-position: bottom;
   background-size: cover;
@@ -425,7 +427,7 @@ footer {
     font-family: 'Roboto', sans-serif;
     color: white;
     text-align: center;
-    margin-top: 20px; }
+    margin-top: 50px; }
   footer .footerRowWrap h4 {
     color: white;
     font-family: 'Roboto', sans-serif;
@@ -496,7 +498,7 @@ footer {
     width: 300px; } }
 
 .eventPageWrap {
-  background: #0E0B16; }
+  background: url(/img/stardust.png); }
   .eventPageWrap .eventPageCol #eventHero {
     padding: 50px 30px; }
     .eventPageWrap .eventPageCol #eventHero .eventHeroWrapper {
@@ -511,11 +513,14 @@ footer {
     .eventPageWrap .eventPageCol #eventInfo h1 {
       font-family: 'Roboto', sans-serif;
       text-align: center;
-      color: white; }
+      color: white;
+      font-size: 32px; }
     .eventPageWrap .eventPageCol #eventInfo h2 {
       font-family: 'Roboto', sans-serif;
       text-align: center;
-      color: white; }
+      font-size: 28px;
+      color: white;
+      margin: 10px 0; }
     .eventPageWrap .eventPageCol #eventInfo p {
       font-family: 'Open Sans', sans-serif;
       color: white; }
@@ -523,8 +528,8 @@ footer {
     padding: 0 30px; }
 
 #eventLocation {
-  padding: 0 30px;
-  background: #0E0B16;
+  padding: 50px 30px;
+  background: url(/img/stardust.png);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -550,6 +555,8 @@ footer {
         padding: 0; }
         .eventPageWrap .eventPageCol #eventHero .eventHeroWrapper {
           padding-top: 0; }
+          .eventPageWrap .eventPageCol #eventHero .eventHeroWrapper img {
+            width: 500px; }
       .eventPageWrap .eventPageCol #eventInfo h1 {
         text-align: left; }
       .eventPageWrap .eventPageCol #eventInfo h2 {
@@ -557,95 +564,104 @@ footer {
   #eventLocation h3 {
     text-align: left; } }
 
-#eventContact .eventContactTitleDesktop {
-  display: none; }
-
-#eventContact .eventContactTitleMobile span {
-  display: block;
-  background: black;
-  color: white;
-  padding: 10px 15px 0 15px; }
-
-#eventContact .guestListForm form, #eventContact .bottleServiceForm form {
-  background: black;
-  box-sizing: border-box;
-  padding: 15px;
-  padding-bottom: 50px; }
-  #eventContact .guestListForm form input, #eventContact .bottleServiceForm form input {
-    width: 100%;
-    box-sizing: border-box;
+#eventContact {
+  margin-top: 30px; }
+  #eventContact .eventContactTitleDesktop {
+    display: none; }
+  #eventContact .eventContactTitleMobile span {
+    display: block;
+    background: #212121;
     color: white;
-    background: grey;
-    padding: 5px;
-    margin: 10px 0;
-    font-family: 'Roboto', sans-serif; }
-    #eventContact .guestListForm form input::-webkit-input-placeholder, #eventContact .bottleServiceForm form input::-webkit-input-placeholder {
-      color: white; }
-    #eventContact .guestListForm form input:-ms-input-placeholder, #eventContact .bottleServiceForm form input:-ms-input-placeholder {
-      color: white; }
-    #eventContact .guestListForm form input::-ms-input-placeholder, #eventContact .bottleServiceForm form input::-ms-input-placeholder {
-      color: white; }
-    #eventContact .guestListForm form input::placeholder, #eventContact .bottleServiceForm form input::placeholder {
-      color: white; }
-  #eventContact .guestListForm form select, #eventContact .bottleServiceForm form select {
-    width: 100%;
+    padding: 10px 15px 0 15px; }
+  #eventContact .guestListForm form, #eventContact .bottleServiceForm form {
+    background: #212121;
     box-sizing: border-box;
-    color: white;
-    background: grey;
-    padding: 5px;
-    margin: 10px 0;
-    font-family: 'Roboto', sans-serif; }
-    #eventContact .guestListForm form select::-webkit-input-placeholder, #eventContact .bottleServiceForm form select::-webkit-input-placeholder {
-      color: white; }
-    #eventContact .guestListForm form select:-ms-input-placeholder, #eventContact .bottleServiceForm form select:-ms-input-placeholder {
-      color: white; }
-    #eventContact .guestListForm form select::-ms-input-placeholder, #eventContact .bottleServiceForm form select::-ms-input-placeholder {
-      color: white; }
-    #eventContact .guestListForm form select::placeholder, #eventContact .bottleServiceForm form select::placeholder {
-      color: white; }
-    #eventContact .guestListForm form select option, #eventContact .bottleServiceForm form select option {
+    padding: 15px;
+    padding-bottom: 50px; }
+    #eventContact .guestListForm form input, #eventContact .bottleServiceForm form input {
       width: 100%;
-      color: white; }
-  #eventContact .guestListForm form textarea, #eventContact .bottleServiceForm form textarea {
-    width: 100%;
-    box-sizing: border-box;
-    resize: none;
-    padding: 5px;
-    background: grey;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    margin: 10px 0; }
-    #eventContact .guestListForm form textarea::-webkit-input-placeholder, #eventContact .bottleServiceForm form textarea::-webkit-input-placeholder {
-      color: white; }
-    #eventContact .guestListForm form textarea:-ms-input-placeholder, #eventContact .bottleServiceForm form textarea:-ms-input-placeholder {
-      color: white; }
-    #eventContact .guestListForm form textarea::-ms-input-placeholder, #eventContact .bottleServiceForm form textarea::-ms-input-placeholder {
-      color: white; }
-    #eventContact .guestListForm form textarea::placeholder, #eventContact .bottleServiceForm form textarea::placeholder {
-      color: white; }
-  #eventContact .guestListForm form button, #eventContact .bottleServiceForm form button {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    padding: 10px 25px;
-    background: grey;
-    border: none;
-    color: white;
-    float: right;
-    margin: 5px 0;
-    cursor: pointer; }
+      box-sizing: border-box;
+      color: white;
+      background: #3c3c3c;
+      border: 2px solid #616161;
+      padding: 5px;
+      margin: 10px 0;
+      font-family: 'Roboto', sans-serif; }
+      #eventContact .guestListForm form input::-webkit-input-placeholder, #eventContact .bottleServiceForm form input::-webkit-input-placeholder {
+        color: white; }
+      #eventContact .guestListForm form input:-ms-input-placeholder, #eventContact .bottleServiceForm form input:-ms-input-placeholder {
+        color: white; }
+      #eventContact .guestListForm form input::-ms-input-placeholder, #eventContact .bottleServiceForm form input::-ms-input-placeholder {
+        color: white; }
+      #eventContact .guestListForm form input::placeholder, #eventContact .bottleServiceForm form input::placeholder {
+        color: white; }
+    #eventContact .guestListForm form select, #eventContact .bottleServiceForm form select {
+      width: 100%;
+      box-sizing: border-box;
+      border: 2px solid #616161;
+      color: white;
+      background: #3c3c3c;
+      padding: 5px;
+      margin: 10px 0;
+      font-family: 'Roboto', sans-serif; }
+      #eventContact .guestListForm form select::-webkit-input-placeholder, #eventContact .bottleServiceForm form select::-webkit-input-placeholder {
+        color: white; }
+      #eventContact .guestListForm form select:-ms-input-placeholder, #eventContact .bottleServiceForm form select:-ms-input-placeholder {
+        color: white; }
+      #eventContact .guestListForm form select::-ms-input-placeholder, #eventContact .bottleServiceForm form select::-ms-input-placeholder {
+        color: white; }
+      #eventContact .guestListForm form select::placeholder, #eventContact .bottleServiceForm form select::placeholder {
+        color: white; }
+      #eventContact .guestListForm form select option, #eventContact .bottleServiceForm form select option {
+        width: 100%;
+        color: white; }
+    #eventContact .guestListForm form textarea, #eventContact .bottleServiceForm form textarea {
+      width: 100%;
+      box-sizing: border-box;
+      border: 2px solid #616161;
+      resize: none;
+      padding: 5px;
+      background: #3c3c3c;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      margin: 10px 0; }
+      #eventContact .guestListForm form textarea::-webkit-input-placeholder, #eventContact .bottleServiceForm form textarea::-webkit-input-placeholder {
+        color: white; }
+      #eventContact .guestListForm form textarea:-ms-input-placeholder, #eventContact .bottleServiceForm form textarea:-ms-input-placeholder {
+        color: white; }
+      #eventContact .guestListForm form textarea::-ms-input-placeholder, #eventContact .bottleServiceForm form textarea::-ms-input-placeholder {
+        color: white; }
+      #eventContact .guestListForm form textarea::placeholder, #eventContact .bottleServiceForm form textarea::placeholder {
+        color: white; }
+    #eventContact .guestListForm form button, #eventContact .bottleServiceForm form button {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      padding: 10px 25px;
+      background: #3c3c3c;
+      color: white;
+      float: right;
+      margin: 5px 0;
+      cursor: pointer;
+      border: 2px solid #616161; }
+      #eventContact .guestListForm form button:hover, #eventContact .bottleServiceForm form button:hover {
+        background: #E7DFDD;
+        color: black; }
 
 @media (min-width: 768px) {
   #eventContact .eventContactTitleDesktop {
     display: flex; }
     #eventContact .eventContactTitleDesktop span {
       display: block;
-      color: red;
+      color: white;
       box-sizing: border-box;
       padding: 10px 25px;
-      border: 1px solid grey;
-      cursor: pointer; }
+      border: 2px solid #212121;
+      cursor: pointer;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700; }
     #eventContact .eventContactTitleDesktop span.active {
-      background: black; }
+      background: #212121;
+      border: none; }
   #eventContact .guestListForm, #eventContact .bottleServiceForm {
     display: none; }
     #eventContact .guestListForm .eventContactTitleMobile, #eventContact .bottleServiceForm .eventContactTitleMobile {
@@ -846,13 +862,19 @@ footer {
         width: 100%;
         box-sizing: border-box;
         padding: 5px;
-        margin: 5px; }
+        margin: 5px;
+        font-family: 'Roboto', sans-serif;
+        color: black;
+        background: white; }
       #pageContact .contactFormWrap form textarea {
         width: 100%;
         box-sizing: border-box;
         resize: none;
         padding: 5px;
-        margin: 5px; }
+        margin: 5px;
+        font-family: 'Roboto', sans-serif;
+        color: black;
+        background: white; }
 
 @media (min-width: 768px) {
   #pageContact .contactFormWrap form {
