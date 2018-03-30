@@ -1,0 +1,35 @@
+.heroDivider
+    position: absolute
+    top: 52vh
+
+    span
+        display: block
+        width: 0
+        height: 0
+        border-style: solid
+        border-width: 0 0 8vh 100vw
+        border-color: transparent transparent $stark transparent
+
+.dividerDarkTop
+
+    span
+        display: block
+        width: 0
+        height: 0
+        border-style: solid
+        border-width: 8vh 100vw 0 0
+        border-color: $stark transparent transparent transparent
+
+.dividerDarkBottom
+
+    span
+        display: block
+        width: 0
+        height: 0
+        border-style: solid
+        border-width: 0 0 8vh 100vw
+        border-color: transparent transparent $stark transparent
+
+@media (min-width: 768px)
+    .heroDivider
+        top: 72vh
