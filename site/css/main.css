@@ -104,7 +104,7 @@ h1, h2, h3, h4, p {
     height: 100px;
     position: absolute;
     width: 100%;
-    background: rgba(0, 0, 0, 0.5); }
+    background: rgba(0, 0, 0, 0.7); }
     .desktopNav ul {
       margin: 0;
       padding: 0;
@@ -560,7 +560,8 @@ footer {
     width: 300px; } }
 
 .eventPageWrap {
-  background: #0E0B16; }
+  /* Background pattern from Subtle Patterns */
+  background: url(/img/congruent.png); }
   .eventPageWrap .eventPageCol #eventHero {
     padding: 50px 30px; }
     .eventPageWrap .eventPageCol #eventHero .eventHeroWrapper {
@@ -591,7 +592,8 @@ footer {
 
 #eventLocation {
   padding: 50px 30px;
-  background: #0E0B16;
+  /* Background pattern from Subtle Patterns */
+  background: url(/img/congruent.png);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -764,7 +766,8 @@ footer {
 
 #pageAbout {
   background: #E7DFDD;
-  padding: 50px 0; }
+  padding: 50px 0;
+  box-sizing: border-box; }
   #pageAbout .pageAboutCol {
     padding: 0 25px; }
     #pageAbout .pageAboutCol h2 {
@@ -1005,7 +1008,7 @@ footer {
 
 .pageHeroDivider {
   position: absolute;
-  top: 42vh; }
+  top: 42.01vh; }
   .pageHeroDivider span {
     display: block;
     width: 0;
