@@ -6,6 +6,10 @@
 
     .pageAboutCol
         padding: 0 25px
+        display: flex
+        justify-content: center
+        flex-direction: column
+        align-items: center
 
         h2
             text-align: center
@@ -27,6 +31,24 @@
             color: white
             font-family: 'Open Sans', sans-serif
 
+        .aboutTextLarge
+            background: linear-gradient(to right, $blue 0%, $purple 100%)
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+            display: inline-block
+            font-family: 'Roboto', sans-serif
+            font-size: 30px
+            font-weight: 700
+
+        .aboutTextSmall
+            background: linear-gradient(to right, $blue 0%, $purple 100%)
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+            display: inline-block
+            font-family: 'Roboto', sans-serif
+            font-size: 20px
+            font-weight: 400
+
 @media (min-width: 768px)
     #pageAbout
         display: flex
@@ -35,6 +57,7 @@
         .pageAboutCol
             width: 300px
             padding: 0
+            display: block
 
             h2
                 text-align: left
@@ -48,6 +71,12 @@
 
             p
                 text-align: left
+
+            .aboutTextLarge
+                font-size: 50px
+
+            .aboutTextSmall
+                font-size: 30px
 
 @media (min-width: 1024px)
     #pageAbout

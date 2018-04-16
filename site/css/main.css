@@ -15,6 +15,9 @@ h1, h2, h3, h4, p {
 .desktopNav {
   display: none; }
 
+.desktopScrollNav {
+  display: none; }
+
 .mobileNav {
   width: 100%;
   height: 50px;
@@ -104,7 +107,7 @@ h1, h2, h3, h4, p {
     height: 100px;
     position: absolute;
     width: 100%;
-    background: rgba(0, 0, 0, 0.7); }
+    background: rgba(0, 0, 0, 0.6); }
     .desktopNav ul {
       margin: 0;
       padding: 0;
@@ -116,7 +119,9 @@ h1, h2, h3, h4, p {
       .desktopNav ul li {
         color: white;
         display: inline-block;
-        font-family: 'Roboto', sans-serif; }
+        font-family: 'Roboto', sans-serif;
+        letter-spacing: 4px;
+        font-size: 13px; }
         .desktopNav ul li a {
           display: block;
           height: 100%;
@@ -128,7 +133,43 @@ h1, h2, h3, h4, p {
           .desktopNav ul li a:hover {
             border-top: 5px solid white; }
           .desktopNav ul li a img {
-            height: 80px; } }
+            height: 80px; }
+  .desktopScrollNav {
+    display: block;
+    position: fixed;
+    height: 55px;
+    z-index: 2;
+    -webkit-transform: translateY(-120%);
+            transform: translateY(-120%);
+    transition: all 0.4s; }
+    .desktopScrollNav ul {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+      align-items: center;
+      width: 100vw;
+      background: rgba(0, 0, 0, 0.6); }
+      .desktopScrollNav ul li {
+        display: inline-block;
+        font-family: 'Roboto', sans-serif;
+        letter-spacing: 4px;
+        font-size: 13px; }
+        .desktopScrollNav ul li img {
+          height: 55px; }
+        .desktopScrollNav ul li a {
+          color: white;
+          height: 100%;
+          cursor: pointer;
+          padding: 17.5px 30px;
+          box-sizing: border-box;
+          box-sizing: border-box;
+          border-top: 5px solid transparent; }
+        .desktopScrollNav ul li .hover:hover {
+          border-top: 5px solid white; }
+  .desktopScrollNav.onScroll {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
 
 #hero {
   padding: 50px 10px;
@@ -769,7 +810,11 @@ footer {
   padding: 50px 0;
   box-sizing: border-box; }
   #pageAbout .pageAboutCol {
-    padding: 0 25px; }
+    padding: 0 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; }
     #pageAbout .pageAboutCol h2 {
       text-align: center;
       color: #fae596;
@@ -786,6 +831,22 @@ footer {
       text-align: center;
       color: white;
       font-family: 'Open Sans', sans-serif; }
+    #pageAbout .pageAboutCol .aboutTextLarge {
+      background: linear-gradient(to right, #3fb0ac 0%, #fae596 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+      font-family: 'Roboto', sans-serif;
+      font-size: 30px;
+      font-weight: 700; }
+    #pageAbout .pageAboutCol .aboutTextSmall {
+      background: linear-gradient(to right, #3fb0ac 0%, #fae596 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+      font-family: 'Roboto', sans-serif;
+      font-size: 20px;
+      font-weight: 400; }
 
 @media (min-width: 768px) {
   #pageAbout {
@@ -793,7 +854,8 @@ footer {
     justify-content: center; }
     #pageAbout .pageAboutCol {
       width: 300px;
-      padding: 0; }
+      padding: 0;
+      display: block; }
       #pageAbout .pageAboutCol h2 {
         text-align: left;
         font-size: 50px; }
@@ -802,7 +864,11 @@ footer {
       #pageAbout .pageAboutCol h4 {
         text-align: left; }
       #pageAbout .pageAboutCol p {
-        text-align: left; } }
+        text-align: left; }
+      #pageAbout .pageAboutCol .aboutTextLarge {
+        font-size: 50px; }
+      #pageAbout .pageAboutCol .aboutTextSmall {
+        font-size: 30px; } }
 
 @media (min-width: 1024px) {
   #pageAbout .pageAboutCol {
