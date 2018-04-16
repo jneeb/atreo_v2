@@ -86,14 +86,15 @@ h1, h2, h3, h4, p {
       padding: 0; }
       .mobileNav #mobileSlider ul li {
         list-style: none;
-        padding: 10px 20px;
         border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
         .mobileNav #mobileSlider ul li a {
+          padding: 10px 20px;
           text-decoration: none;
           color: black;
           width: 100%;
           font-family: 'Roboto', sans-serif;
-          font-weight: 700; }
+          font-weight: 700;
+          display: block; }
 
 #mobileSlider.isOpen {
   -webkit-transform: translate(0);
@@ -912,7 +913,6 @@ footer {
          object-fit: cover;
       cursor: pointer; }
     #photoGrid .albumGridWrap .albumImg svg {
-      display: none;
       width: 35px;
       z-index: 5;
       position: absolute;
@@ -933,9 +933,7 @@ footer {
       justify-content: center;
       flex-direction: column;
       cursor: pointer;
-      transition: all 0.3s ease-in-out;
-      -webkit-transform: translateY(100%);
-              transform: translateY(100%); }
+      transition: all 0.3s ease-in-out; }
       #photoGrid .albumGridWrap .albumImg .albumImgMeta h4 {
         color: white;
         text-align: center;
@@ -945,7 +943,6 @@ footer {
         text-align: center;
         font-family: 'Roboto', sans-serif; }
     #photoGrid .albumGridWrap .albumImg .filter {
-      display: none;
       background: rgba(0, 0, 0, 0.6);
       box-sizing: border-box;
       height: 300px;
@@ -996,6 +993,23 @@ footer {
     #photoGrid .albumGridWrap {
       justify-content: flex-start;
       max-width: 900px; }
+      #photoGrid .albumGridWrap .albumImg .filter {
+        display: none; }
+      #photoGrid .albumGridWrap .albumImg .albumImgMeta {
+        -webkit-transform: translateY(100%);
+                transform: translateY(100%); }
+      #photoGrid .albumGridWrap .albumImg svg {
+        display: none; }
+      #photoGrid .albumGridWrap .albumImg:hover img {
+        z-index: 1; }
+      #photoGrid .albumGridWrap .albumImg:hover svg {
+        display: block; }
+      #photoGrid .albumGridWrap .albumImg:hover .albumImgMeta {
+        display: flex;
+        -webkit-transform: translateY(0);
+                transform: translateY(0); }
+      #photoGrid .albumGridWrap .albumImg:hover .filter {
+        display: block; }
     #photoGrid .videoGridWrap {
       max-width: 1200px; } }
 

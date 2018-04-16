@@ -24,7 +24,7 @@
                 cursor: pointer
 
             svg
-                display: none
+                // display: none
                 width: 35px
                 z-index: 5
                 position: absolute
@@ -45,7 +45,6 @@
                 flex-direction: column
                 cursor: pointer
                 transition: all 0.3s ease-in-out
-                transform: translateY(100%)
 
                 h4
                     color: white
@@ -58,7 +57,7 @@
                     font-family: 'Roboto', sans-serif
 
             .filter
-                display: none
+                // display: none
                 background: rgba(0, 0, 0, 0.6)
                 box-sizing: border-box
                 height: 300px
@@ -136,6 +135,30 @@
                 // height: 400px
 
                 img
+
+                .filter
+                    display: none
+
+                .albumImgMeta
+                    transform: translateY(100%)
+
+                svg
+                    display: none
+
+                &:hover
+
+                    img
+                        z-index: 1
+
+                    svg
+                        display: block
+
+                    .albumImgMeta
+                        display: flex
+                        transform: translateY(0)
+
+                    .filter
+                        display: block
 
         .videoGridWrap
             max-width: 1200px
