@@ -206,7 +206,7 @@ h1, h2, h3, h4, p {
     cursor: pointer;
     transition: all 0.3s ease; }
     #hero button:hover {
-      background: white;
+      background: #dddfd4;
       color: black; }
 
 @media (min-width: 768px) {
@@ -448,7 +448,11 @@ h1, h2, h3, h4, p {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     cursor: pointer;
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    transition: all 0.3s ease; }
+    #events button:hover {
+      background: #dddfd4;
+      color: black; }
 
 @media (min-width: 1200px) {
   #events .eventTextLarge {
@@ -618,18 +622,29 @@ footer {
       font-family: 'Roboto', sans-serif;
       text-align: center;
       color: white;
-      font-size: 32px; }
+      font-size: 25px; }
     .eventPageWrap .eventPageCol #eventInfo h2 {
       font-family: 'Roboto', sans-serif;
       text-align: center;
-      font-size: 28px;
+      font-size: 40px;
       color: white;
-      margin: 10px 0; }
+      margin: 10px 0;
+      color: #fae596; }
     .eventPageWrap .eventPageCol #eventInfo p {
       font-family: 'Open Sans', sans-serif;
       color: white; }
+    .eventPageWrap .eventPageCol #eventInfo .lineDivider {
+      background: #fae596;
+      display: block;
+      width: 100px;
+      height: 5px;
+      margin-bottom: 20px;
+      display: none; }
   .eventPageWrap .eventPageCol #eventContact {
     padding: 0 30px; }
+    .eventPageWrap .eventPageCol #eventContact .guestListForm span {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700; }
 
 #eventLocation {
   padding: 50px 30px;
@@ -674,6 +689,8 @@ footer {
           text-align: left; }
         .eventPageWrap .eventPageCol #eventInfo h2 {
           text-align: left; }
+        .eventPageWrap .eventPageCol #eventInfo .lineDivider {
+          display: block; }
   #eventLocation h3 {
     text-align: left; } }
 
@@ -798,11 +815,11 @@ footer {
   #pageHero h1 {
     text-align: center;
     margin-top: 20px;
-    color: white;
+    color: #262626;
     font-family: 'Roboto', sans-serif; }
   #pageHero h3 {
     text-align: center;
-    color: white;
+    color: #262626;
     font-family: 'Roboto', sans-serif; }
 
 #pageAbout {
@@ -832,6 +849,7 @@ footer {
       color: white;
       font-family: 'Open Sans', sans-serif; }
     #pageAbout .pageAboutCol .aboutTextLarge {
+      color: #fae596;
       background: linear-gradient(to right, #3fb0ac 0%, #fae596 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -840,6 +858,7 @@ footer {
       font-size: 30px;
       font-weight: 700; }
     #pageAbout .pageAboutCol .aboutTextSmall {
+      color: #fae596;
       background: linear-gradient(to right, #3fb0ac 0%, #fae596 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -1003,17 +1022,47 @@ footer {
         padding: 5px;
         margin: 5px;
         font-family: 'Roboto', sans-serif;
-        color: black;
-        background: white; }
+        color: white;
+        background: #3c3c3c;
+        border: 2px solid #616161;
+        font-family: 'Roboto', sans-serif; }
+        #pageContact .contactFormWrap form input::-webkit-input-placeholder {
+          color: white; }
+        #pageContact .contactFormWrap form input:-ms-input-placeholder {
+          color: white; }
+        #pageContact .contactFormWrap form input::-ms-input-placeholder {
+          color: white; }
+        #pageContact .contactFormWrap form input::placeholder {
+          color: white; }
       #pageContact .contactFormWrap form textarea {
         width: 100%;
         box-sizing: border-box;
         resize: none;
         padding: 5px;
         margin: 5px;
+        background: #3c3c3c;
+        border: 2px solid #616161;
+        font-family: 'Roboto', sans-serif; }
+        #pageContact .contactFormWrap form textarea::-webkit-input-placeholder {
+          color: white; }
+        #pageContact .contactFormWrap form textarea:-ms-input-placeholder {
+          color: white; }
+        #pageContact .contactFormWrap form textarea::-ms-input-placeholder {
+          color: white; }
+        #pageContact .contactFormWrap form textarea::placeholder {
+          color: white; }
+      #pageContact .contactFormWrap form button {
         font-family: 'Roboto', sans-serif;
-        color: black;
-        background: white; }
+        font-weight: 700;
+        padding: 10px 25px;
+        background: #3c3c3c;
+        color: white;
+        float: right;
+        margin: 5px 0;
+        cursor: pointer;
+        border: 2px solid #616161; }
+        #pageContact .contactFormWrap form button:hover {
+          background: #616161; }
 
 @media (min-width: 768px) {
   #pageContact .contactFormWrap form {
@@ -1029,22 +1078,23 @@ footer {
 
 #albumTitle {
   padding-top: 150px;
-  background: url(/img/ep_naturalblack.png); }
+  background: #1a1a1a; }
   #albumTitle h1 {
     color: white;
     text-align: center;
-    padding: 30px; }
+    padding: 30px;
+    font-family: 'Roboto', sans-serif; }
 
 #photoAlbum {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: url(/img/ep_naturalblack.png);
-  padding: 0 25px; }
+  background: #1a1a1a;
+  padding: 0 25px 50px 25px; }
   #photoAlbum .albumWrap {
     width: 100%;
-    background: url(/img/ep_naturalblack.png); }
+    background: #1a1a1a; }
     #photoAlbum .albumWrap .slider-for img {
       width: 100%; }
     #photoAlbum .albumWrap .slider-nav img {
@@ -1055,15 +1105,15 @@ footer {
 
 @media (min-width: 768px) {
   #photoAlbum {
-    padding: 0 150px; } }
+    padding: 0 150px 0 50px 150px; } }
 
 @media (min-width: 1024px) {
   #photoAlbum {
-    padding: 0 200px; } }
+    padding: 0 200px 0 50px 200px; } }
 
 @media (min-width: 1200px) {
   #photoAlbum {
-    padding: 0 25%; } }
+    padding: 0 25% 50px 25%; } }
 
 .heroDivider {
   position: absolute;

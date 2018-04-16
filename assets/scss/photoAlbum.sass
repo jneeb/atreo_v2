@@ -1,24 +1,25 @@
 #albumTitle
     padding-top: 150px
-    background: url(/img/ep_naturalblack.png)
+    background: $dark
 
     h1
         // background: #616161
         color: white
         text-align: center
         padding: 30px
+        font-family: 'Roboto', sans-serif
 
 #photoAlbum
     display: flex
     justify-content: center
     align-items: center
     flex-direction: column
-    background: url(/img/ep_naturalblack.png)
-    padding: 0 25px
+    background: $dark
+    padding: 0 25px 50px 25px
 
     .albumWrap
         width: 100%
-        background: url(/img/ep_naturalblack.png)
+        background: $dark
 
         .slider-for
 
@@ -35,12 +36,12 @@
 
 @media (min-width: 768px)
     #photoAlbum
-        padding: 0 150px
+        padding: 0 150px 0 50px 150px
 
 @media (min-width: 1024px)
     #photoAlbum
-        padding: 0 200px
+        padding: 0 200px 0 50px 200px
 
 @media (min-width: 1200px)
     #photoAlbum
-        padding: 0 25%
+        padding: 0 25% 50px 25%
