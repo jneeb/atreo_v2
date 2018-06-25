@@ -42,6 +42,7 @@
             font-family: 'Roboto', sans-serif
             font-size: 30px
             font-weight: 700
+            display: none
 
         .aboutTextSmall
             color: $purple
@@ -52,6 +53,12 @@
             font-family: 'Roboto', sans-serif
             font-size: 20px
             font-weight: 400
+            display: none
+
+#pageAbout.pageAboutCol.contact
+
+    p
+        text-align: center
 
 @media (min-width: 768px)
     #pageAbout
@@ -78,12 +85,25 @@
 
             .aboutTextLarge
                 font-size: 50px
+                display: inline-block
 
             .aboutTextSmall
                 font-size: 30px
+                display: inline-block
+
+        .pageAboutCol.contact
+
+            p
+                text-align: center
 
 @media (min-width: 1024px)
     #pageAbout
 
         .pageAboutCol
             width: 450px
+
+            .aboutTextLarge
+                font-size: 75px
+
+            .aboutTextSmall
+                font-size: 40px
