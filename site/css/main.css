@@ -195,7 +195,8 @@ h1, h2, h3, h4, p {
     text-align: center;
     color: white;
     font-family: 'Roboto', sans-serif;
-    margin: 10px 0; }
+    margin: 10px 0;
+    font-weight: 400; }
     #hero h1 img {
       height: 50px; }
   #hero button {
@@ -560,8 +561,8 @@ footer {
         color: #3b5998; }
       footer .footerRowWrap .socialIcons a i:hover.fa-instagram {
         color: #df3967; }
-      footer .footerRowWrap .socialIcons a i:hover.fa-twitter {
-        color: #00aced; }
+      footer .footerRowWrap .socialIcons a i:hover.fa-youtube {
+        color: #ff0000; }
   footer .footerRowWrap .mailingList {
     display: flex;
     justify-content: center;
@@ -790,6 +791,10 @@ footer {
       font-weight: 700;
       position: absolute;
       padding-top: 15px; }
+  #eventContact img {
+    width: 100%;
+    max-width: 650px;
+    padding-bottom: 30px; }
 
 @media (min-width: 768px) {
   #eventContact .eventContactTitleDesktop {
@@ -880,7 +885,8 @@ footer {
       display: inline-block;
       font-family: 'Roboto', sans-serif;
       font-size: 30px;
-      font-weight: 700; }
+      font-weight: 700;
+      display: none; }
     #pageAbout .pageAboutCol .aboutTextSmall {
       color: #fae596;
       background: linear-gradient(to right, #3fb0ac 0%, #fae596 100%);
@@ -889,7 +895,11 @@ footer {
       display: inline-block;
       font-family: 'Roboto', sans-serif;
       font-size: 20px;
-      font-weight: 400; }
+      font-weight: 400;
+      display: none; }
+
+#pageAbout.pageAboutCol.contact p {
+  text-align: center; }
 
 @media (min-width: 768px) {
   #pageAbout {
@@ -909,13 +919,21 @@ footer {
       #pageAbout .pageAboutCol p {
         text-align: left; }
       #pageAbout .pageAboutCol .aboutTextLarge {
-        font-size: 50px; }
+        font-size: 50px;
+        display: inline-block; }
       #pageAbout .pageAboutCol .aboutTextSmall {
-        font-size: 30px; } }
+        font-size: 30px;
+        display: inline-block; }
+    #pageAbout .pageAboutCol.contact p {
+      text-align: center; } }
 
 @media (min-width: 1024px) {
   #pageAbout .pageAboutCol {
-    width: 450px; } }
+    width: 450px; }
+    #pageAbout .pageAboutCol .aboutTextLarge {
+      font-size: 75px; }
+    #pageAbout .pageAboutCol .aboutTextSmall {
+      font-size: 40px; } }
 
 #photoGrid {
   padding-bottom: 100px;
@@ -968,8 +986,8 @@ footer {
     #photoGrid .albumGridWrap .albumImg .filter {
       background: rgba(0, 0, 0, 0.6);
       box-sizing: border-box;
-      height: 300px;
-      width: 300px;
+      height: 100%;
+      width: 100%;
       position: absolute;
       cursor: pointer; }
     #photoGrid .albumGridWrap .albumImg:hover img {
@@ -1070,6 +1088,24 @@ footer {
         #pageContact .contactFormWrap form input::-ms-input-placeholder {
           color: white; }
         #pageContact .contactFormWrap form input::placeholder {
+          color: white; }
+      #pageContact .contactFormWrap form select {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 5px;
+        margin: 5px;
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        background: #3c3c3c;
+        border: 2px solid #616161;
+        font-family: 'Roboto', sans-serif; }
+        #pageContact .contactFormWrap form select::-webkit-input-placeholder {
+          color: white; }
+        #pageContact .contactFormWrap form select:-ms-input-placeholder {
+          color: white; }
+        #pageContact .contactFormWrap form select::-ms-input-placeholder {
+          color: white; }
+        #pageContact .contactFormWrap form select::placeholder {
           color: white; }
       #pageContact .contactFormWrap form textarea {
         width: 100%;
