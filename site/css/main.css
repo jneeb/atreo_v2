@@ -132,7 +132,7 @@ h1, h2, h3, h4, p {
           color: white;
           padding: 39.5px 30px;
           box-sizing: border-box;
-          border-top: 5px solid transparent; }
+          border-top: 5px solid rgba(0, 0, 0, 0); }
           .desktopNav ul li a:hover {
             border-top: 5px solid white; }
           .desktopNav ul li a img {
@@ -167,7 +167,7 @@ h1, h2, h3, h4, p {
           padding: 17.5px 30px;
           box-sizing: border-box;
           box-sizing: border-box;
-          border-top: 5px solid transparent; }
+          border-top: 5px solid rgba(0, 0, 0, 0); }
         .desktopScrollNav ul li .hover:hover {
           border-top: 5px solid white; }
   .desktopScrollNav.onScroll {
@@ -822,9 +822,10 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: linear-gradient(to right, rgba(63, 176, 172, 0.6), rgba(250, 229, 150, 0.6)), url(/img/about-img-3.jpg);
+  background: linear-gradient(to right, rgba(63, 176, 172, 0.6), rgba(250, 229, 150, 0.6)), url(/img/nakras-birthday-pt-2-47.jpg);
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-position: center; }
   #pageHero h1 {
     text-align: center;
     margin-top: 20px;
