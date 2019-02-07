@@ -742,7 +742,8 @@ footer {
       background: #3c3c3c;
       padding: 5px;
       margin: 10px 0;
-      font-family: 'Roboto', sans-serif; }
+      font-family: 'Roboto', sans-serif;
+      word-wrap: break-word; }
       #eventContact .guestListForm form select::-webkit-input-placeholder, #eventContact .bottleServiceForm form select::-webkit-input-placeholder {
         color: white; }
       #eventContact .guestListForm form select:-ms-input-placeholder, #eventContact .bottleServiceForm form select:-ms-input-placeholder {
@@ -821,6 +822,10 @@ footer {
     display: block; }
   #eventContact .bottleServiceForm.active {
     display: block; } }
+
+@media (max-width: 1200px) {
+  #eventContact .guestListForm select, #eventContact .bottleServiceForm select {
+    -webkit-appearance: none; } }
 
 #pageHero {
   height: 50vh;

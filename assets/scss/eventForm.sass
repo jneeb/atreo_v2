@@ -43,6 +43,7 @@
                 padding: 5px
                 margin: 10px 0
                 font-family: 'Roboto', sans-serif
+                word-wrap: break-word
 
                 &::placeholder
                     color: white
@@ -126,3 +127,12 @@
 
         .bottleServiceForm.active
             display: block
+
+@media (max-width: 1200px)
+
+    #eventContact
+
+        .guestListForm, .bottleServiceForm
+
+            select
+                -webkit-appearance: none
