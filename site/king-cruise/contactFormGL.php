@@ -1,6 +1,6 @@
 <?php
     if(isset($_POST['submit'])) {
-        $myemail = 'neebjustin@gmail.com';
+        $myemail = 'atreoentertainment@gmail.com ';
         $name = $_POST['fullName'];
         $guests = $_POST['guestAmount'];
         $phone = $_POST['number'];
