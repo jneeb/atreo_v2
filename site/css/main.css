@@ -78,6 +78,7 @@ h1, h2, h3, h4, p {
       top: -3px; }
   .mobileNav #mobileSlider {
     width: 100%;
+    box-sizing: border-box;
     margin-top: 50px;
     -webkit-transform: translateY(-150%);
             transform: translateY(-150%);
@@ -88,9 +89,9 @@ h1, h2, h3, h4, p {
       padding: 0; }
       .mobileNav #mobileSlider ul li {
         list-style: none;
+        padding: 10px 20px;
         border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
         .mobileNav #mobileSlider ul li a {
-          padding: 10px 20px;
           text-decoration: none;
           color: black;
           width: 100%;
@@ -524,11 +525,11 @@ h1, h2, h3, h4, p {
     justify-content: space-around;
     align-items: center; }
     #sponsors .sponsorWrap img {
-      width: 100px;
+      width: 50px;
       margin: 20px; } }
 
 @media (min-width: 1200px) {
-  #sponsors img {
+  #sponsors .sponsorWrap img {
     width: 150px;
     margin: 20px; } }
 
@@ -710,13 +711,28 @@ footer {
     display: block;
     background: #212121;
     color: white;
-    padding: 10px 15px 0 15px; }
+    padding: 10px 15px 0 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold; }
   #eventContact .guestListForm form, #eventContact .bottleServiceForm form {
     background: #212121;
     box-sizing: border-box;
     padding: 15px;
     padding-bottom: 50px;
     max-width: 650px; }
+    #eventContact .guestListForm form span, #eventContact .bottleServiceForm form span {
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+      color: white;
+      background: #3c3c3c;
+      border: 2px solid #616161;
+      padding: 5px;
+      margin: 10px 0;
+      font-family: 'Roboto', sans-serif;
+      font-size: 13.3333px; }
+      #eventContact .guestListForm form span i, #eventContact .bottleServiceForm form span i {
+        padding: 0 5px; }
     #eventContact .guestListForm form input, #eventContact .bottleServiceForm form input {
       width: 100%;
       box-sizing: border-box;

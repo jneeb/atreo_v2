@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>King Cruise | Atreo Entertainment</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="/css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="/slick/slick.css">
+    <link rel="stylesheet" href="/slick/slick-theme.css">
+</head>
+<body>
+    <header>
+        <div class="mobileNav">
+            <span></span>
+            <div class="logo">
+                <a href="/"><img src="/img/atreo-logo.png" alt=""></a>
+            </div>
+            <div id="mobileBurger">
+                <span></span>
+            </div>
+            <div id="mobileSlider">
+                <ul>
+                    <li><a href="../#events">EVENTS</a></li>
+                    <li><a href="/pictures">PICTURES</a></li>
+                    <li><a href="/videos">VIDEOS</a></li>
+                    <!-- <li><a href="http://www.blog.atreo.ca">BLOG</a></li> -->
+                    <li><a href="/contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="desktopNav">
+            <ul>
+                <li><a href="../#events">EVENTS</a></li>
+                <li><a href="/pictures">PHOTOS</a></li>
+                <li><a href="/"><img src="/img/ruby-logo.png" alt=""></a></li>
+                <li><a href="/videos">VIDEOS</a></li>
+                <li><a href="/contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </header>
+
+        <div class="eventPageWrap">
+            <div class="eventPageCol">
+                <section id="eventHero">
+                    <div class="eventHeroWrapper">
+                        <img src="/img/onyx poster.png" alt="">
+                    </div>
+                </section>
+            </div>
+
+            <div class="eventPageCol">
+                <section id="eventInfo">
+                    <h1>THE OFFICIAL GRAND</h1>
+                    <h2>OPENING WEEKEND</h2>
+                    <span class="lineDivider"></span>
+                    <p>Atreo Entertainment takes Toronto and rides the wave with the Yankee Lady Charter IV. This is a high-end event with sounds by TkeOverSound and performances from RamRiddlz and other special guests. Limited tickets so get yours before they sell out.</p>
+                </section>
+                <section id="eventContact">
+                    <div class="eventContactTitleDesktop">
+                        <span class="guestListDesktop active">GUEST LIST</span>
+                        <span class="bottleServiceDesktop">BOTTLE SERVICE</span>
+                    </div>
+                    <div class="guestListForm active">
+                        <div class="eventContactTitleMobile">
+                            <span>GUEST LIST</span>
+                        </div>
+                        <form action="contactFormGL.php" method="post">
+                            <input type="text" name="fullName" value="" placeholder="Full Name">
+                            <select class="" name="guestAmount">
+                                <option value="guest amount">Guest amount</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                                <option value="32">32</option>
+                                <option value="33">33</option>
+                                <option value="34">34</option>
+                                <option value="35">35</option>
+                                <option value="36">36</option>
+                                <option value="37">37</option>
+                                <option value="38">38</option>
+                                <option value="39">39</option>
+                                <option value="40">40</option>
+                                <option value="41">41</option>
+                                <option value="42">42</option>
+                                <option value="43">43</option>
+                                <option value="44">44</option>
+                                <option value="45">45</option>
+                                <option value="46">46</option>
+                                <option value="47">47</option>
+                                <option value="48">48</option>
+                                <option value="49">49</option>
+                                <option value="50">50</option>
+                            </select>
+                            <input type="text" name="number" placeholder="Promoter name (leave blank if none)">
+                            <input type="text" name="number" placeholder="Phone Number">
+                            <input type="text" name="email" placeholder="Email Address">
+                            <textarea name="notes" rows="8" cols="80" placeholder="Additional Notes (name guests)"></textarea>
+                            <button type="submit" name="submit">Submit</button>
+                        </form>
+                    </div>
+                    <div class="bottleServiceForm">
+                        <div class="eventContactTitleMobile">
+                            <span>BOTTLE SERVICE</span>
+                        </div>
+                        <form action="contactFormBS.php" method="post">
+                            <input type="text" name="fullName" placeholder="Full Name">
+                            <input type="text" name="number" placeholder="Phone Number">
+                            <input type="text" name="email" placeholder="Email Address">
+                            <input type="text" name="promoter" placeholder="Promoter name (leave blank if none)">
+                            <select name="boothSize" id="">
+                                <option value="Small Booth">Small booth (6 Guests)</option>
+                                <option value="Big Booth">Big Booth (12 Guests)</option>
+                            </select>
+                            <a href="/documents/atreo menu.png"><span>View Bottle Service Menu  <i class="fa fa-external-link-alt"></i></span></a>
+                            <select name="bottleAmount" id="">
+                                <option value="Select Package">Select Package</option>
+                                <option value="Gold Package">Gold Package ($375)</option>
+                                <option value="Diamond Package">Diamond Package ($450)</option>
+                                <option value="Platinum Package">Platinum Package ($500)</option>
+                            </select>
+                            <textarea name="notes" rows="8" cols="80" placeholder="Additional Notes"></textarea>
+                            <button type="submit" name="submit">Submit</button>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <section id="eventLocation">
+            <h3>12 WYNDHAM ST NORTH, GUELPH</h3>
+            <div id="map"></div>
+        </section>
+
+        <section id="sponsors">
+            <div class="sponsorWrap">
+                <a href="https://www.facebook.com/thebarberloungeguelph/" target="_blank"><img src="/img/barberLounge.png" alt=""></a>
+                <a href="http://captaincutz.com/" target="_blank"><img src="/img/captainCutz.png" alt=""></a>
+                <a href="http://mrosmow.com/#/" target="_blank"><img src="/img/osmows.png" alt=""></a>
+                <a href="http://www.guelphvapourco.com/" target="_blank"><img src="/img/gvc.png" alt=""></a>
+                <a href="http://www.pizzapizza.ca/" target="_blank"><img src="/img/pizzapizza.png" alt=""></a>
+                <a href="https://www.z-teca.com/" target="_blank"><img src="/img/z-teca.png" alt=""></a>
+            </div>
+        </section>
+
+        <footer>
+            <h3><img src="/img/atreo-logo.png" alt=""></h3>
+            <div class="footerRowWrap">
+                <div class="socialFooter">
+                    <h4>FOLLOW US ON</h4>
+                    <div class="socialIcons">
+                        <a href="https://www.facebook.com/AtreoEntertainment/"><i class="fab fa-facebook-square" target="_blank"></i></a>
+                        <a href="https://www.instagram.com/atreoentertainment/?hl=en"><i class="fab fa-instagram" target="_blank"></i></a>
+                        <a href="https://www.youtube.com/channel/UCH07-PXaKL8TCluFpflAD2w" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <!-- <div class="mailingList">
+                    <h4>JOIN THE MAILING LIST</h4>
+                    <span>Your Email</span>
+                    <span>JOIN THE MAILING LIST</span>
+                </div> -->
+            </div>
+            <p>2018 ATREO ENTERTAINMENT. ALL RIGHTS RESERVED. WEBSITE DESIGN BY <a href="http://www.neebmedia.com">NeebMedia</a></p>
+        </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </body>
+    <script type="text/javascript" src="/functions/burger.js"></script>
+    <script type="text/javascript" src="/functions/smoothScroll.js"></script>
+    <script src="/functions/mapAPI.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtOHi-D41sqHHFyKormXrD3gmeM8vIbXs&callback=initMap"></script>
+    <script src="/functions/eventContact.js"></script>
+</html>
