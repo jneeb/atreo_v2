@@ -2,13 +2,24 @@
     background: $dark
 
     .sponsorWrap
-        padding: 30px 100px
+        // padding: 30px 100px
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+        align-items: center
 
+        div
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            align-items: center
 
-        img
-            width: 100%
-            margin: 20px 0
-            cursor: pointer
+            img
+                width: 100%
+                margin: 20px 0
+                padding 0 30px
+                box-sizing: border-box
+                cursor: pointer
 
 @media (min-width: 768px)
     #sponsors
@@ -19,14 +30,24 @@
             justify-content: space-around
             align-items: center
 
-            img
-                width: 50px
-                margin: 20px
+            div
+                display: flex
+                flex-direction: row
+                justify-content: space-between
+                align-items: center
+
+                img
+                    width: 50px
+                    margin: 20px
+                    padding: 0 30px
+                    box-sizing: border-box
 
 @media (min-width: 1200px)
     #sponsors
         .sponsorWrap
 
-            img
-                width: 150px
-                margin: 20px
+            div
+
+                img
+                    width: 200px
+                    margin: 20px

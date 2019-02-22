@@ -177,10 +177,10 @@ h1, h2, h3, h4, p {
 
 #hero {
   padding: 50px 10px;
-  background: linear-gradient(50deg, rgba(26, 26, 26, 0.5), rgba(26, 26, 26, 0.5)), url(/img/nakras-birthday-pt-2-47.jpg);
+  background: linear-gradient(50deg, rgba(26, 26, 26, 0.6), rgba(26, 26, 26, 0.6)), url(/img/hero-img.jpg);
+  background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top;
   box-sizing: border-box;
   justify-content: center;
   display: flex;
@@ -191,29 +191,30 @@ h1, h2, h3, h4, p {
     text-align: center;
     color: white;
     font-family: 'Roboto', sans-serif;
-    font-size: 20px; }
+    font-size: 20px;
+    font-weight: 300; }
   #hero h1 {
     text-align: center;
     color: white;
     font-family: 'Roboto', sans-serif;
     margin: 10px 0;
     font-weight: 400; }
-    #hero h1 img {
-      height: 50px; }
+  #hero img {
+    height: 50px;
+    padding: 10px 0; }
   #hero button {
     display: block;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     padding: 10px 35px;
-    background: #3fb0ac;
+    background: #bfa06b;
     border: none;
     color: white;
     cursor: pointer;
     transition: all 0.3s ease;
-    font-weight: 700; }
+    font-weight: 300; }
     #hero button:hover {
-      background: #dddfd4;
-      color: black; }
+      background: rgba(137, 113, 79, 0.8); }
 
 @media (min-width: 768px) {
   #hero {
@@ -223,7 +224,9 @@ h1, h2, h3, h4, p {
       font-size: 20px; }
     #hero h1 {
       font-size: 28px;
-      margin: 20px; } }
+      margin: 20px; }
+    #hero img {
+      height: 70px; } }
 
 @media (min-width: 1200px) {
   #hero {
@@ -238,7 +241,7 @@ h1, h2, h3, h4, p {
         height: 75px; } }
 
 #about {
-  background: #dddfd4;
+  background: #444444;
   padding: 50px 0; }
   #about .aboutCol {
     padding: 0 30px;
@@ -247,7 +250,8 @@ h1, h2, h3, h4, p {
     flex-direction: column; }
     #about .aboutCol h2 {
       font-family: 'Roboto', sans-serif;
-      text-align: center; }
+      text-align: center;
+      color: white; }
     #about .aboutCol h2:nth-child(4) {
       margin-bottom: 30px; }
     #about .aboutCol h3 {
@@ -256,20 +260,23 @@ h1, h2, h3, h4, p {
       text-align: center;
       margin-bottom: 10px;
       overflow: hidden;
-      display: inline-block; }
+      display: inline-block;
+      color: white; }
     #about .aboutCol h4 {
       font-family: 'Roboto', sans-serif;
       text-align: center;
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      color: white; }
     #about .aboutCol p {
       font-family: 'Open Sans', sans-serif;
       text-align: center;
       margin-bottom: 30px;
-      line-height: 2; }
+      line-height: 2;
+      color: white; }
     #about .aboutCol h2 {
       font-family: 'Open Sans', sans-serif; }
     #about .aboutCol .aboutTextLarge {
-      background: linear-gradient(to right, #3fb0ac 0%, #fae596 100%);
+      background: linear-gradient(to right, #bfa06b 0%, #BA1F25 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       font-family: 'Open Sans', sans-serif;
@@ -299,7 +306,7 @@ h1, h2, h3, h4, p {
                 transform: translate3d(0, 0, 0); }
       #about .aboutCol .imgRow span .filter {
         display: none;
-        background: rgba(63, 176, 172, 0.6);
+        background: rgba(191, 160, 107, 0.6);
         box-sizing: border-box;
         height: 150px;
         width: 150px;
@@ -399,7 +406,7 @@ h1, h2, h3, h4, p {
     margin-right: 15%; } }
 
 #events {
-  background: linear-gradient(50deg, rgba(26, 26, 26, 0.8), rgba(26, 26, 26, 0.8)), url(/img/about-img-3.jpg);
+  background: linear-gradient(50deg, rgba(26, 26, 26, 0.8), rgba(26, 26, 26, 0.8)), url(/img/event-background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -413,7 +420,7 @@ h1, h2, h3, h4, p {
     font-size: 30px;
     margin: 10px;
     font-weight: 700;
-    background: linear-gradient(to right, #3fb0ac 0%, #fae596 100%);
+    background: linear-gradient(to right, #BA1F25 0%, #BA1F25 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
   #events h2 {
@@ -424,7 +431,7 @@ h1, h2, h3, h4, p {
     margin: 10px; }
   #events h3 {
     text-align: center;
-    color: #fae596;
+    color: #bfa06b;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: 400;
@@ -449,7 +456,7 @@ h1, h2, h3, h4, p {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     border: none;
-    background: #3fb0ac;
+    background: #bfa06b;
     color: white;
     padding: 15px 25px;
     font-family: 'Roboto', sans-serif;
@@ -458,8 +465,7 @@ h1, h2, h3, h4, p {
     margin-bottom: 50px;
     transition: all 0.3s ease; }
     #events button:hover {
-      background: #dddfd4;
-      color: black; }
+      background: rgba(137, 113, 79, 0.8); }
 
 @media (min-width: 1200px) {
   #events {
@@ -479,11 +485,13 @@ h1, h2, h3, h4, p {
 
 #photos {
   padding: 50px 30px;
-  background: #dddfd4; }
+  background: #444444; }
   #photos h3 {
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    color: white;
+    font-weight: 300; }
   #photos .imgRow img {
     width: 100%;
     cursor: pointer; }
@@ -512,11 +520,20 @@ h1, h2, h3, h4, p {
 #sponsors {
   background: #1a1a1a; }
   #sponsors .sponsorWrap {
-    padding: 30px 100px; }
-    #sponsors .sponsorWrap img {
-      width: 100%;
-      margin: 20px 0;
-      cursor: pointer; }
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
+    #sponsors .sponsorWrap div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; }
+      #sponsors .sponsorWrap div img {
+        width: 100%;
+        margin: 20px 0;
+        box-sizing: border-box;
+        cursor: pointer; }
 
 @media (min-width: 768px) {
   #sponsors .sponsorWrap {
@@ -524,13 +541,20 @@ h1, h2, h3, h4, p {
     flex-direction: row;
     justify-content: space-around;
     align-items: center; }
-    #sponsors .sponsorWrap img {
-      width: 50px;
-      margin: 20px; } }
+    #sponsors .sponsorWrap div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; }
+      #sponsors .sponsorWrap div img {
+        width: 50px;
+        margin: 20px;
+        padding: 0 30px;
+        box-sizing: border-box; } }
 
 @media (min-width: 1200px) {
-  #sponsors .sponsorWrap img {
-    width: 150px;
+  #sponsors .sponsorWrap div img {
+    width: 200px;
     margin: 20px; } }
 
 footer {
@@ -580,7 +604,7 @@ footer {
     footer .footerRowWrap .mailingList span:nth-child(2) {
       margin-top: 30px; }
     footer .footerRowWrap .mailingList span:nth-child(3) {
-      background: #3fb0ac; }
+      background: #bfa06b; }
   footer p {
     color: white;
     text-align: center;
@@ -638,12 +662,12 @@ footer {
       font-size: 40px;
       color: white;
       margin: 10px 0;
-      color: #fae596; }
+      color: #BA1F25; }
     .eventPageWrap .eventPageCol #eventInfo p {
       font-family: 'Open Sans', sans-serif;
       color: white; }
     .eventPageWrap .eventPageCol #eventInfo .lineDivider {
-      background: #fae596;
+      background: #BA1F25;
       display: block;
       width: 100px;
       height: 5px;
@@ -848,14 +872,14 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: linear-gradient(to right, rgba(63, 176, 172, 0.6), rgba(250, 229, 150, 0.6)), url(/img/nakras-birthday-pt-2-47.jpg);
+  background: linear-gradient(50deg, rgba(14, 11, 22, 0.5), rgba(14, 11, 22, 0.5)), url(/img/about-img-3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
   #pageHero h1 {
     text-align: center;
     margin-top: 20px;
-    color: #262626;
+    color: white;
     font-family: 'Roboto', sans-serif; }
   #pageHero h3 {
     text-align: center;
@@ -882,25 +906,25 @@ footer {
     align-items: center; }
     #pageAbout .pageAboutCol h2 {
       text-align: center;
-      color: #fae596;
+      color: #BA1F25;
       font-family: 'Roboto', sans-serif; }
     #pageAbout .pageAboutCol h3 {
       text-align: center;
-      color: #fae596;
+      color: #BA1F25;
       font-family: 'Roboto', sans-serif; }
     #pageAbout .pageAboutCol h4 {
       text-align: center;
       font-size: 22px;
       padding-bottom: 10px;
-      color: #fae596;
+      color: white;
       font-family: 'Roboto', sans-serif; }
     #pageAbout .pageAboutCol p {
       text-align: center;
       color: white;
       font-family: 'Open Sans', sans-serif; }
     #pageAbout .pageAboutCol .aboutTextLarge {
-      color: #fae596;
-      background: linear-gradient(to right, #3fb0ac 0%, #fae596 100%);
+      color: #BA1F25;
+      background: linear-gradient(to right, #bfa06b 0%, #bfa06b 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       display: inline-block;
@@ -909,8 +933,8 @@ footer {
       font-weight: 700;
       display: none; }
     #pageAbout .pageAboutCol .aboutTextSmall {
-      color: #fae596;
-      background: linear-gradient(to right, #3fb0ac 0%, #fae596 100%);
+      color: #BA1F25;
+      background: linear-gradient(to right, #bfa06b 0%, #bfa06b 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       display: inline-block;
@@ -1223,7 +1247,7 @@ footer {
     height: 0;
     border-style: solid;
     border-width: 0 0 8vh 100vw;
-    border-color: transparent transparent #dddfd4 transparent; }
+    border-color: transparent transparent #444444 transparent; }
 
 .pageHeroDivider {
   position: absolute;
@@ -1234,7 +1258,7 @@ footer {
     height: 0;
     border-style: solid;
     border-width: 0 0 8vh 100vw;
-    border-color: transparent transparent #dddfd4 transparent; }
+    border-color: transparent transparent #444444 transparent; }
 
 .dividerDarkTop span {
   display: block;
@@ -1242,7 +1266,7 @@ footer {
   height: 0;
   border-style: solid;
   border-width: 8vh 100vw 0 0;
-  border-color: #dddfd4 transparent transparent transparent; }
+  border-color: #444444 transparent transparent transparent; }
 
 .dividerDarkTop.dark span {
   border-color: #1a1a1a transparent transparent transparent; }
@@ -1256,7 +1280,7 @@ footer {
   height: 0;
   border-style: solid;
   border-width: 0 0 8vh 100vw;
-  border-color: transparent transparent #dddfd4 transparent; }
+  border-color: transparent transparent #444444 transparent; }
 
 @media (min-width: 768px) {
   .heroDivider {

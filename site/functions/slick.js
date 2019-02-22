@@ -15,3 +15,16 @@ $(document).ready(function(){
         focusOnSelect: true
     });
 });
+
+$(document).ready(function(){
+    $('.sponsorWrap').slick({
+      slidesToShow: 5,
+      infinite: true,
+      centerMode: true,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 1500,
+      arrows: false,
+      dots: false
+  });
+});
