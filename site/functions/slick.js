@@ -5,26 +5,29 @@ $(document).ready(function(){
         arrows: false,
         adaptiveHeight: true,
         fade: true,
-        asNavFor: '.slider-nav'
+        asNavFor: '.slider-nav',
+        focusOnSelect: true
     });
     $('.slider-nav').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
         asNavFor: '.slider-for',
         centerMode: true,
-        focusOnSelect: true
+        focusOnSelect: true,
+        arrows: false
     });
 });
 
 $(document).ready(function(){
     $('.sponsorWrap').slick({
-      slidesToShow: 5,
-      infinite: true,
-      centerMode: true,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 1500,
-      arrows: false,
-      dots: false
+        speed: 4000,
+        autoplay: true,
+        autoplaySpeed: 0,
+        cssEase: 'linear',
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        variableWidth: true,
+        arrows: false,
+        dots: false
   });
 });

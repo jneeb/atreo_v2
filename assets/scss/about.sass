@@ -136,12 +136,22 @@
                         z-index: 7
 
                     img
-                        height: 150px
+                        height: auto
                         width: 150px
                         margin: 5px
                         object-fit: cover
                         transition: all 0.1s ease-in-out
                         box-sizing: border-box
+
+                    .filter
+                        display: none
+                        background: rgba(191,160,107,0.6)
+                        box-sizing: border-box
+                        height: 100.04px
+                        width: 150px
+                        position: absolute
+                        cursor: pointer
+                        transform: translate3d(0, 0, 0)
 
 
                 span:hover
@@ -209,11 +219,11 @@
                 span
 
                     .filter
-                        height: 300px
+                        height: 200.9px
                         width: 300px
 
                     img
-                        height: 300px
+                        height: auto
                         width: 300px
 
 @media (min-width: 1600px)

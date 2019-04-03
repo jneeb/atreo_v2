@@ -118,11 +118,17 @@ h1, h2, h3, h4, p
         display: none
 
     .desktopNav
-        display: block
+        display: flex
+        justify-content: space-between
+        align-items: center
         height: 100px
         position: absolute
         width: 100%
         background: rgba(0, 0, 0, 0.6)
+
+        img
+            height: 50px
+            margin-left: 50px
 
         ul
             margin: 0
@@ -132,6 +138,7 @@ h1, h2, h3, h4, p
             align-items: center
             justify-content: center
             height: 100px
+            margin-right: 50px
 
             li
                 color: white
@@ -156,21 +163,25 @@ h1, h2, h3, h4, p
                         height: 80px
 
     .desktopScrollNav
-        display: block
+        display: flex
+        align-items: center
+        justify-content: space-between
         position: fixed
-        height: 55px
+        height: 60px
         z-index: 2
+        width: 100%
         transform: translateY(-120%)
         transition: all 0.4s
+        background: rgba(0, 0, 0, 0.6)
+
+        img
+            height: 40px
+            margin-left: 50px
 
         ul
-            display: flex
-            justify-content: center
             margin: 0
             padding: 0
-            align-items: center
-            width: 100vw
-            background: rgba(0, 0, 0, 0.6)
+            margin-right: 50px
 
             li
                 display: inline-block
@@ -187,10 +198,9 @@ h1, h2, h3, h4, p
                     cursor: pointer
                     padding: 17.5px 30px
                     box-sizing: border-box
-                    box-sizing: border-box
                     border-top: 5px solid rgba(0, 0, 0, 0)
 
-                .hover:hover
+                a:hover
                     border-top: 5px solid white
 
     .desktopScrollNav.onScroll
